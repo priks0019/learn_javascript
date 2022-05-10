@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/main.css" />
+    <title>SignIn</title>
+  </head>
+  <body>
+    <main>
+      <div class="container mb shadow">
+        <div class="head">LOGIN</div>
+
+        <form
+          class="pd"
+          id="form"
+          onsubmit="return validateForm()"
+          name="myForm"
+          action="#"
+        >
+          <div class="relative">
+            <fieldset>
+              <legend>Email</legend>
+              <input
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="Enter Your Email here"
+              />
+            </fieldset>
+          </div>
+          <div class="relative">
+            <fieldset>
+              <legend>Password</legend>
+              <input
+                onblur="hover()"
+                type="password"
+                name="pwd"
+                id="pwd"
+                placeholder="Enter Your Password here"
+              />
+            </fieldset>
+          </div>
+          <div class="mb flex justify-center">
+            <button onclick="save()" class="btn btn-primary" type="submit">
+              Login
+            </button>
+          </div>
+        </form>
+        <p class="font-size mb pe flex flex-end">
+          I you haven't yet? &ThickSpace;<span class="hover"
+            ><a href="signup.html">Register Now</a></span
+          >
+        </p>
+      </div>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

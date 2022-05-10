@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/main.css" />
+    <title>SignUp Form</title>
+  </head>
+  <body>
+    <main>
+      <nav id="time"></nav>
+
+      <div class="container mb shadow block">
+        <form enctype="multipart/form-data" id="form" name="myForm" class="pd">
+          <div class="head">SIGN-UP</div>
+          <div class="relative">
+            <fieldset>
+              <legend>Name</legend>
+              <input
+                type="text"
+                name="fn"
+                id="fn"
+                placeholder="Enter Your Name"
+              />
+            </fieldset>
+          </div>
+          <div class="relative">
+            <fieldset>
+              <legend>Mobile Number</legend>
+              <input
+                type="text"
+                name="num"
+                id="num"
+                placeholder="Enter Your Mobile Number"
+              />
+            </fieldset>
+          </div>
+          <div class="relative">
+            <fieldset>
+              <legend>Email</legend>
+              <input
+                type="text"
+                name="mail"
+                id="mail"
+                placeholder="Please Enter your Email"
+              />
+            </fieldset>
+          </div>
+          <div class="relative">
+            <fieldset>
+              <legend>Password</legend>
+              <input
+                type="password"
+                name="pwd"
+                id="pwd"
+                placeholder="Please Enter Your Password"
+              />
+            </fieldset>
+          </div>
+          <div class="flex mb justify-center">
+            <button class="btn btn-primary" onclick="store()" type="submit">
+              Sign-up
+            </button>
+          </div>
+        </form>
+        <p class="flex mb pe font-size flex-end">
+          If you already have an account?&ThickSpace;
+          <span class="hover"><a href="login.html"> Login Now</a></span>
+        </p>
+      </div>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
